@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/search.css">
+    <title>E-Commerce</title>
+    <script type="module" defer src="./app/search.js"></script>
+</head>
+
+<body>
+    <!-- Header Starts Here!!! -->
+    <header>
+        <div class="header-s1">
+            <div class="wrapper flex space-between item-center flex space-between item-center">
+                <a href="home.html">
+                    <img src="./images/logo-colored.png" alt="Image Unavailable" class="logo" />
+                </a>
+                <div class="search-field flex item-center">
+                    <input type="text" placeholder="Search" class="search-bar h-100 border-none">
+                    <select class="dropdown h-100 text-center border-none">
+                        <option value="all">All Categories</option>
+                    </select>
+                    <button class="search-btn h-100 border-none text-white pointer">
+                        Search
+                    </button>
+                </div>
+                <div class="link flex space-between item-center">
+                    <div class="link-col h-100 pointer flex space-between item-center flex-col">
+                        <img src="./images/profile.svg" alt="Image Unavailable" class="block icon">
+                        <p>Profile</p>
+                    </div>
+                    <div class="link-col h-100 pointer flex space-between item-center flex-col">
+                        <img src="./images/message.svg" alt="Image Unavailable" class="block icon">
+                        <p>Messages</p>
+                    </div>
+                    <div class="link-col h-100 pointer flex space-between item-center flex-col">
+                        <img src="./images/orders.svg" alt="Image Unavailable" class="block icon">
+                        <p>Orders</p>
+                    </div>
+                    <div class="link-col h-100 pointer flex space-between item-center flex-col">
+                        <img src="./images/cart.svg" alt="Image Unavailable" class="block icon">
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-s2">
+            <div class="wrapper flex space-between item-center flex space-between item-center">
+                <ul class="flex item-center g-2rem">
+                    <li class="flex item-center pointer g-5px">
+                        <img src="./images/hamburger.svg">
+                        <p>All Category</p>
+                    </li>
+                    <li class="pointer">
+                        Hot Offers
+                    </li>
+                    <li class="pointer">
+                        Gift Boxes
+                    </li>
+                    <li class="pointer">
+                        Projects
+                    </li>
+                    <li class="pointer">
+                        Menu Item
+                    </li>
+                </ul>
+
+                <ul class="flex item-center g-2rem">
+                    <li>
+                        <select name="" id="" class="border-none">
+                            <option value="">English, USD</option>
+                        </select>
+                    </li>
+                    <li class="flex item-center justify-center g-5px">
+                        Ship To, <img src="./images/germany.svg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here!!! -->
+
+    <div class="wrapper grid">
+        <div class="col filter w-100">
+            <div id="category-dd" class="dropDown w-100 pointer">
+                <div class="flex space-between item-center btn-category">
+                    <h2 class="dropdown-title">Category</h2>
+                    <img src="./images/down.svg" alt="Image Unavailable" class="chevron ch-category up pointer">
+                </div>
+                <div id="category">
+                </div>
+            </div>
+            <div id="price-range" class="dropDown hide w-100">
+                <div class="flex space-between item-center range-selector">
+                    <h2 class="dropdown-title">Price Range</h2>
+                    <img src="./images/down.svg" alt="Image Unavailable" class="chevron ch-range pointer">
+                </div>
+                <input type="range">
+            </div>
+        </div>
+        <div class="col-secondary flex flex-col g-1rem">
+            <div class="filter-bar w-100 flex space-between item-center p-1rem">
+                <h4>Mobile Accessories</h4>
+                <ul class="flex item-center g-1rem">
+                    <li>
+                        <div class="views flex item-center g-5px">
+                            <div data-mode="grid" class="box pointer flex item-center justify-center">
+                                <img data-mode="grid" src="./images/grid.svg" alt="Image Unavailable">
+                            </div>
+                            <div data-mode="tile" class="box pointer flex item-center justify-center selected-view">
+                                <img data-mode="tile" src="./images/tiles.svg" alt="Image Unavailable">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid-2">
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-100">
+        <div class="wrapper main flex justify-center item-center">
+            <div class="grid w-100">
+                <div class="col w-100 flex flex-col g-1rem">
+                    <img src="./images/logo-colored.png" alt="Image Unavailable" class="logo">
+                    <div class="text">
+                        Best information about the company <br> gies here but now lorem ipsum is
+                    </div>
+                    <ul class="flex item-center g-1rem">
+                        <li>
+                            <img src="./images/SM/facebook.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                        <li>
+                            <img src="./images/SM/twitter.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                        <li>
+                            <img src="./images/SM/linkedin.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                        <li>
+                            <img src="./images/SM/instagram.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                        <li>
+                            <img src="./images/SM/youtube.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        About
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="text footer-link block">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Find Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        Partnership
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="text footer-link block">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Find Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        Information
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="text footer-link block">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Find Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        For Us
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="text footer-link block">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Find Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        Get app
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="block">
+                                <img src="./images/SM/appstore.svg" alt="Image Unavailable">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block mt-5px">
+                                <img src="./images/SM/playstore.svg" alt="Image Unavailable">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 copyright flex justify-center item-center">
+            <div class="wrapper flex item-center space-between">
+                <p class="text">© 2023 Ecommerce. </p>
+                <div class="flex g-5px item-center">
+                    <img src="./images/usa.svg" alt="Image Unavailable">
+                    <p class="text">English</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

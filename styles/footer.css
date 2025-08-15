@@ -1,0 +1,39 @@
+footer {
+  .main {
+    background: #fff;
+    height: 324px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr);
+  }
+
+  .logo {
+    height: 46px;
+    width: 150px;
+  }
+
+  .text {
+    color: #505050;
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .footer-link {
+    text-decoration-color: 505050;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .copyright {
+    height: 68px;
+    background: #dee2e7;
+  }
+}

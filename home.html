@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <script defer type="module" src="./app/home.js"></script>
+</head>
+
+<body>
+    <!-- Header Starts Here!!! -->
+    <header>
+        <div class="header-s1">
+            <div class="wrapper flex space-between item-center flex space-between item-center">
+                <a href="home.html">
+                    <img src="./images/logo-colored.png" alt="Image Unavailable" class="logo" />
+                </a>
+                <div class="search-field flex item-center">
+                    <input type="text" placeholder="Search" class="search-bar h-100 border-none">
+                    <select class="dropdown h-100 text-center border-none">
+                        <option value="all">All Categories</option>
+                    </select>
+                    <button class="search-btn h-100 border-none text-white pointer">
+                        Search
+                    </button>
+                </div>
+                <div class="link flex space-between item-center">
+                    <div class="link-col h-100 pointer flex space-between item-center flex-col">
+                        <img src="./images/profile.svg" alt="Image Unavailable" class="block icon">
+                        <p>Profile</p>
+                    </div>
+                    <div class="link-col h-100 pointer flex space-between item-center flex-col">
+                        <img src="./images/message.svg" alt="Image Unavailable" class="block icon">
+                        <p>Messages</p>
+                    </div>
+                    <div class="link-col h-100 pointer flex space-between item-center flex-col">
+                        <img src="./images/orders.svg" alt="Image Unavailable" class="block icon">
+                        <p>Orders</p>
+                    </div>
+                    <div class="link-col h-100 pointer flex space-between item-center flex-col">
+                        <img src="./images/cart.svg" alt="Image Unavailable" class="block icon">
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-s2">
+            <div class="wrapper flex space-between item-center flex space-between item-center">
+                <ul class="flex item-center g-2rem">
+                    <li class="flex item-center pointer g-5px">
+                        <img src="./images/hamburger.svg">
+                        <p>All Category</p>
+                    </li>
+                    <li class="pointer">
+                        Hot Offers
+                    </li>
+                    <li class="pointer">
+                        Gift Boxes
+                    </li>
+                    <li class="pointer">
+                        Projects
+                    </li>
+                    <li class="pointer">
+                        Menu Item
+                    </li>
+                </ul>
+
+                <ul class="flex item-center g-2rem">
+                    <li>
+                        <select name="" id="" class="border-none">
+                            <option value="">English, USD</option>
+                        </select>
+                    </li>
+                    <li class="flex item-center justify-center g-5px">
+                        Ship To, <img src="./images/germany.svg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here!!! -->
+
+    <div class="wrapper container flex item-center flex-col g-2rem">
+
+        <!-- Trends Section Starts Here!!! -->
+        <div class="trends-section flex space-between item-center">
+            <div class="col1 categories-column">
+            </div>
+            <div class="banner">
+                <img src="./images/banner.svg" class="block">
+                <div class="overlay">
+                    <h1 class="pre-title">Latest trending</h1>
+                    <h1 id="category" class="main-title">Automobiles</h1>
+                    <button class="pointer">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="col2 flex flex-col item-center space-between">
+                <div class="user-greet flex flex-col space-between item-center">
+                    <div class="avatar-container flex space-between item-center">
+                        <img src="./images/user.svg" alt="Image Unavailable">
+                        <p>
+                            Hi, user <br> let get stated
+                        </p>
+                    </div>
+                    <button class="join-now pointer"> Join now</button>
+                    <button class="login pointer">Log in</button>
+                </div>
+                <div class="offer text-white">
+                    <p>Get US $10 off <br> with a new <br> supplier</p>
+                </div>
+                <div class="quote text-white">
+                    <p>
+                        Send quotes with <br> supplier <br> preferences
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Trends Section Ends Here!!! -->
+
+        <!-- Deals Section Starts Here!!! -->
+        <div class="deals-section grid">
+            <div class="timer p-1rem">
+                <h4>Deals and offers</h4>
+                <p class="sub-heading">Hygiene equipments</p>
+                <div class="time-clock flex item-center g-1rem">
+                    <div class="box text-center flex item-center justify-center flex-col">
+                        <h4 class="text-white">04</h4>
+                        <p class="text-white">Days</p>
+                    </div>
+                    <div class="box text-center flex item-center justify-center flex-col">
+                        <h4 class="text-white">11</h4>
+                        <p class="text-white">hours</p>
+                    </div>
+                    <div class="box text-center flex item-center justify-center flex-col">
+                        <h4 class="text-white">33</h4>
+                        <p class="text-white">min</p>
+                    </div>
+                    <div class="box text-center flex item-center justify-center flex-col">
+                        <h4 class="text-white">59</h4>
+                        <p class="text-white">sec</p>
+                    </div>
+                </div>
+            </div>
+            <div id="dealsContainer" class="inner-grid">
+                
+                
+            </div>
+        </div>
+        <!-- Deals Section Ends Here!!! -->
+
+        <!-- Home and Outdoor Section Starts Here!!! -->
+        <div class="home-outdoor grid">
+            <div class="left-side">
+                <img src="./images/home.jpg" alt="Image Unavailable" class="block">
+                <div class="overlay p-1rem">
+                    <h4>
+                        Home and <br> outdoor
+                    </h4>
+                    <button class="pointer">
+                        Source now
+                    </button>
+                </div>
+            </div>
+            <div id="home-outdoor-container" class="inner-grid">
+                
+            </div>
+        </div>
+        <!-- Home and Outdoor Section Ends Here!!! -->
+
+        <!-- Consumer and Electronic Section Starts Here!!! -->
+        <div class="consumer-electronics home-outdoor grid">
+            <div class="left-side">
+                <img src="./images/consumer and electronics.png" alt="Image Unavailable" class="block">
+                <div class="overlay p-1rem">
+                    <h4>
+                        Consumer <br> electronics and <br> gadegts
+                    </h4>
+                    <button class="pointer">
+                        Source now
+                    </button>
+                </div>
+            </div>
+            <div id="electronics-section" class="inner-grid">
+            </div>
+        </div>
+        <!-- Consumer and Electronic Section Ends Here!!! -->
+
+        <!-- Contact Section Starts Here!!! -->
+        <div class="w-100 contact-section p-2rem flex space-between item-center">
+            <div class="col h-100">
+                <h1 class="text-white">An easy way to send <br> requests to all suppliers</h1>
+                <p class="text-white mt-1rem">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor incididunt.
+                </p>
+            </div>
+            <form action="" class="form flex flex-col space-between p-1rem">
+                <h1>Send quote to suppliers</h1>
+                <input type="text" value="What do you need?" class="w-100">
+                <textarea name="need_description" id="detail" placeholder="Type more details"></textarea>
+                <ul class="flex item-center g-1rem">
+                    <li>
+                        <input type="number" placeholder="Quantity">
+                    </li>
+                    <li>
+                        <select name="" id="Quantity">
+                            <option value="">Pcs</option>
+                        </select>
+                    </li>
+                </ul>
+                <button class="pointer">
+                    Send inquiry
+                </button>
+            </form>
+        </div>
+        <!-- Contact Section Ends Here!!! -->
+
+        <!-- Recommended Items Section Starts Here!!! -->
+        <div class="w-100 recommended-items ">
+            <h1 class="title">
+                Recommended Items
+            </h1>
+            <div id="recommended-container" class="w-100 grid">
+                
+                <!--  -->
+            </div>
+        </div>
+        <!-- Recommended Items Section Ends Here!!! -->
+
+        <!-- Our Extra Services Section Starts Here!!! -->
+        <div class="w-100 extra-services">
+            <h1 class="title">
+                Our extra services
+            </h1>
+            <div class="grid w-100">
+                <div class="card pointer">
+                    <div class="img-container">
+                        <img src="./images/services1.png" alt="Image Unavailable">
+                        <div class="bubble flex justify-center item-center">
+                            <img src="./images/glass.svg" alt="Image Unavailable" class="block icon">
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <h1 class="description">
+                            Source from Industry Hubs
+                        </h1>
+                    </div>
+                </div>
+                <div class="card pointer">
+                    <div class="img-container">
+                        <img src="./images/services1.png" alt="Image Unavailable">
+                        <div class="bubble flex justify-center item-center">
+                            <img src="./images/glass.svg" alt="Image Unavailable" class="block icon">
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <h1 class="description">
+                            Source from Industry Hubs
+                        </h1>
+                    </div>
+                </div>
+                <div class="card pointer">
+                    <div class="img-container">
+                        <img src="./images/services1.png" alt="Image Unavailable">
+                        <div class="bubble flex justify-center item-center">
+                            <img src="./images/glass.svg" alt="Image Unavailable" class="block icon">
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <h1 class="description">
+                            Source from Industry Hubs
+                        </h1>
+                    </div>
+                </div>
+                <div class="card pointer">
+                    <div class="img-container">
+                        <img src="./images/services1.png" alt="Image Unavailable">
+                        <div class="bubble flex justify-center item-center">
+                            <img src="./images/glass.svg" alt="Image Unavailable" class="block icon">
+                        </div>
+                    </div>
+                    <div class="description-container">
+                        <h1 class="description">
+                            Source from Industry Hubs
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Extra Services Section Ends Here!!! -->
+
+        <!-- Supplier Section Starts Here!!! -->
+        <div class="w-100 supplier">
+            <div class="title">
+                Suppliers by region
+            </div>
+            <div class="flex space-between item-center flex-wrap w-100 supplier-card-container g-1rem">
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+                <div class="supplier-card flex item-center g-10px pointer">
+                    <img src="./images/uae.svg" alt="Image Unavailable" class="block icon">
+                    <div class="description">
+                        <h1 class="name">Arab Emirates</h1>
+                        <p class="link">shopname.ae</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Supplier Section Ends Here!!! -->
+    </div>
+
+    <!-- News Letter Section Starts Here!!! -->
+    <div class="news-letter w-100 flex justify-center item-center flex-col">
+        <div class="title">Subscribe on our newsletter</div>
+        <div class="subheading">Get daily news on upcoming offers from many suppliers all over the world</div>
+        <ul class="flex item-center g-1rem form">
+            <li>
+                <input type="email" placeholder="Email">
+            </li>
+            <li>
+                <button class="pointer">Subscribe</button>
+            </li>
+        </ul>
+    </div>
+    <!-- News Letter Section Ends Here!!! -->
+
+    <footer class="w-100">
+        <div class="wrapper main flex justify-center item-center">
+            <div class="grid w-100">
+                <div class="col w-100 flex flex-col g-1rem">
+                    <img src="./images/logo-colored.png" alt="Image Unavailable" class="logo">
+                    <div class="text">
+                        Best information about the company <br> gies here but now lorem ipsum is
+                    </div>
+                    <ul class="flex item-center g-1rem">
+                        <li>
+                            <img src="./images/SM/facebook.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                        <li>
+                            <img src="./images/SM/twitter.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                        <li>
+                            <img src="./images/SM/linkedin.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                        <li>
+                            <img src="./images/SM/instagram.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                        <li>
+                            <img src="./images/SM/youtube.svg" alt="Image Unavailable" class="pointer">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        About
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="text footer-link block">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Find Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        Partnership
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="text footer-link block">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Find Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        Information
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="text footer-link block">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Find Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        For Us
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="text footer-link block">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Find Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text footer-link block mt-5px">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col flex flex-col g-1rem">
+                    <h1 class="title">
+                        Get app
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#" class="block">
+                                <img src="./images/SM/appstore.svg" alt="Image Unavailable">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block mt-5px">
+                                <img src="./images/SM/playstore.svg" alt="Image Unavailable">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 copyright flex justify-center item-center">
+            <div class="wrapper flex item-center space-between">
+                <p class="text">© 2023 Ecommerce. </p>
+                <div class="flex g-5px item-center">
+                    <img src="./images/usa.svg" alt="Image Unavailable">
+                    <p class="text">English</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
